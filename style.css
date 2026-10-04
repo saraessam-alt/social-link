@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,255,255,0.35),
+            transparent 45%
+        ),
+        #dccfc6;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Main Card */
+
+.card {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 42px 32px 32px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.72);
+
+    border: 1px solid rgba(255,255,255,0.8);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 25px 60px rgba(70, 45, 35, 0.15),
+        inset 0 1px 0 rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* Logo */
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 22px;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid rgba(255,255,255,0.9);
+
+    box-shadow:
+        0 10px 30px rgba(70,45,35,0.18);
+}
+
+
+/* Clinic Name */
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    color: #6f263d;
+
+    line-height: 1;
+}
+
+
+.clinic-name {
+    margin-top: 7px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #806c63;
+}
+
+
+/* Decorative Line */
+
+.line {
+    width: 45px;
+    height: 1px;
+
+    margin: 20px auto 15px;
+
+    background: #9b6c72;
+}
+
+
+.subtitle {
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    color: #806c63;
+
+    margin-bottom: 25px;
+}
+
+
+/* Social Buttons */
+
+.social-button {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    height: 58px;
+
+    margin: 13px 0;
+
+    padding: 0 18px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    color: #5c4b45;
+
+    background: rgba(255,255,255,0.75);
+
+    border: 1px solid rgba(111,38,61,0.12);
+
+    box-shadow:
+        0 5px 15px rgba(70,45,35,0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* Icon */
+
+.icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #f1e8e3;
+
+    color: #6f263d;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    margin-right: 14px;
+}
+
+
+/* Button Text */
+
+.social-button > span:nth-child(2) {
+    font-size: 14px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* Arrow */
+
+.arrow {
+    margin-left: auto;
+
+    font-size: 18px;
+
+    color: #9b7b78;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* Hover */
+
+.social-button:hover {
+    transform: translateY(-3px);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 25px rgba(70,45,35,0.12);
+}
+
+
+.social-button:hover .arrow {
+    transform: translate(3px,-3px);
+}
+
+
+/* Footer */
+
+.footer {
+    margin-top: 28px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    color: #806c63;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 35px 22px 28px;
+
+        border-radius: 25px;
+    }
+
+    .logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+}
+
